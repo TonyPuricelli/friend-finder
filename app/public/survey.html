@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class='container'>
-        <div class='card-panel yellow darken-1 col s12center-align'>
+        <div class='card-panel blue darken-1 col s12center-align'>
                 <h4><strong>Survey Questions</strong></h4>
                 <div class='card-panel left-align white'>
                     <h5><strong>About You</strong></h5>
@@ -127,11 +127,11 @@
                     </select>
                     <br>
                     <!-- Materialize Modal Trigger/Submit Button -->
-                    <button type ="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger cyan lighten-1" id="submitBtn">Submit</button>
+                    <button type ="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger #ffd600 lighten-1" id="submitBtn">Submit</button>
                 </div>
         </div>
         <div class='col s4'>
-            <p><a href='/api/friends'>API Friends List</a>| <ahref='https://github.com/StefanieDing/friend-fnder' target='_blank'>GitHub Repo</a></p>
+            <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/TonyPuricelli/friend-finder' target='_blank'>GitHub Repo</a></p>
         </div>
 
         <!-- Materialize Modal -->
@@ -142,7 +142,7 @@
                 <img id="matchPic" src="" alt="No Image" width= 250px>
             </div>
         <div class="modal-footer">
-            <a href="#!" class= "modal-action modal-closewaves-effect waves-green btn-flat">Done</a>
+            <a href="./home.html" class= "modal-action modal-closewaves-effect waves-green btn-flat">Done</a>
         </div>
         </div>
     
@@ -193,7 +193,7 @@
                 $.post(currentURL + "/api/friends", newFriend, function(data) {
                     //Grab the result from the AJAX post so that the best match's name and photo are displayed.
                     $("#matchName").text(data.name);
-                    $("#matchPic").attr("src", data.profilePic);
+                    $("#matchPic").attr("src", data.photo);
                 });
                 // Show the modal with the best match
                     $('.modal').modal();

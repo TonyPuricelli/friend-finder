@@ -13,6 +13,38 @@ let friendsArray = [{
         4,
         1
       ]
+  },
+  {
+    "name":"Tony",
+    "photo":"http://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/istock-511366776.jpg?itok=cWhdWNZ8&resize=1100x619",
+    "scores":[
+        5,
+        5,
+        5,
+        1,
+        1,
+        3,
+        4,
+        5,
+        5,
+        5
+      ]
+  },
+  {
+    "name":"Lisa",
+    "photo":"http://www.simpsoncrazy.com/content/pictures/lisa/LisaSimpson3.gif",
+    "scores":[
+        3,
+        1,
+        3,
+        1,
+        1,
+        1,
+        4,
+        2,
+        4,
+        3
+      ]
   }];
 
   module.exports = friendsArray;
