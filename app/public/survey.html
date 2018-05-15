@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Friend Finder</title>
+</head>
+<body>
+    <div class='container'>
+        <div class='card-panel yellow darken-1 col s12center-align'>
+                <h4><strong>Survey Questions</strong></h4>
+                <div class='card-panel left-align white'>
+                    <h5><strong>About You</strong></h5>
+                    <br>
+                    <input id="name" type="text" class="validate" required>
+                    <label class="active" for="name">Name</label>
+                    <input id="photo" type="text" class="validate" required>
+                    <label class="active" for="name">Photo</label>
+                    <p>Please rate your agreement with each of the statements below.</p>
+                    <h5><strong>Statement 1</strong></h5>
+                    <p>"Clue" is the definitive comedy film of the 20th century.</p>
+                    <select data-placeholder="" class="browser-default" id="q1">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h5><strong>Statement 2</strong></h5>
+                    <p>I always stick to the right side of the sidewalk when walking in busy pedestrian areas.</p>
+                    <select data-placeholder="" class="browser-default" id="q2">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h5><strong>Statement 3</strong></h5>
+                    <p>I would leave my friend behind if they snapped at the wait staff in a bar or restaurant.</p>
+                    <select data-placeholder="" class="browser-default" id="q3">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h5><strong>Statement 4</strong></h5>
+                    <p>If there's a patio, you can find me there all summer long.</p>
+                    <select data-placeholder="" class="browser-default" id="q4">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h5><strong>Statement 5</strong></h5>
+                    <p>I eat the whole avocado in one sitting because I don't know how to store them properly.</p>
+                    <select data-placeholder="" class="browser-default" id="q5">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h5><strong>Statement 6</strong></h5>
+                    <p>I cry during "The Godfather 3," but more for me than for the characters.</p>
+                    <select data-placeholder="" class="browser-default" id="q6">
+                        <option value="">Choose an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h5><strong>Statement 7</strong></h5>
+                    <p>I respect other people's political opinions except when they are a Nazi.</p>
+                    <select data-placeholder="" class="browser-default" id="q7">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h5><strong>Statement 8</strong></h5>
+                    <p>I am secretly relieved when other people flake on social plans.</p>
+                    <select data-placeholder="" class="browser-default" id="q8">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h5><strong>Statement 9</strong></h5>
+                    <p>I can't be trusted around other people's snacks.</p>
+                    <select data-placeholder="" class="browser-default" id="q9">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h5><strong>Statement 10</strong></h5>
+                    <p>I am more of a dog person than a cat person.</p>
+                    <select data-placeholder="" class="browser-default" id="q10">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <!-- Materialize Modal Trigger/Submit Button -->
+                    <button type ="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger cyan lighten-1" id="submitBtn">Submit</button>
+                </div>
+        </div>
+        <div class='col s4'>
+            <p><a href='/api/friends'>API Friends List</a>| <ahref='https://github.com/StefanieDing/friend-fnder' target='_blank'>GitHub Repo</a></p>
+        </div>
+
+        <!-- Materialize Modal -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Meet Your New BFF</h4>
+                <h5 id="matchName"></h5>
+                <img id="matchPic" src="" alt="No Image" width= 250px>
+            </div>
+        <div class="modal-footer">
+            <a href="#!" class= "modal-action modal-closewaves-effect waves-green btn-flat">Done</a>
+        </div>
+        </div>
+    
+    </div>
+
+    <!-- Send data to server -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#submitBtn").on("click", function() {
+
+            // validate form data
+            function validateForm() {
+                var isValid = true;
+                $('.validate').each(function() {
+                    if ($(this).val() === ""){
+                        isValid = false;
+                    }
+                });
+                $('.browser-default').each(function() {
+                    if ($(this).val() === ""){
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+
+            if (validateForm() == true) {
+                //creates a new friend from the values submitted
+                var newFriend = {
+                    name: $('#name').val().trim(),
+                    profilePic: $('#photo').val().trim(),
+                    scores: [
+                        $('#q1').val(),
+                        $('#q2').val(),
+                        $('#q3').val(),
+                        $('#q4').val(),
+                        $('#q5').val(),
+                        $('#q6').val(),
+                        $('#q7').val(),
+                        $('#q8').val(),
+                        $('#q9').val(),
+                        $('#q10').val(),
+                    ]
+                };
+                //Grabs current URL of website
+                var currentURL = window.location.origin;
+                //AJAX posts the data to friends API.
+                $.post(currentURL + "/api/friends", newFriend, function(data) {
+                    //Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                    $("#matchName").text(data.name);
+                    $("#matchPic").attr("src", data.profilePic);
+                });
+                // Show the modal with the best match
+                    $('.modal').modal();
+                //clear form after submission
+                $('#name').val("");
+                $('#photo').val("");
+                $('#q1').val("");
+                $('#q2').val("");
+                $('#q3').val("");
+                $('#q4').val("");
+                $('#q5').val("");
+                $('#q6').val("");
+                $('#q7').val("");
+                $('#q8').val("");
+                $('#q9').val("");
+                $('#q10').val("");
+            } else {
+                alert("Please fill out ALL fields before submitting survey!")
+            }
+            // return false;
+        });
+    });
+    </script> 
+
+</body>
+</html>
